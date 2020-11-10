@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Class<RegularEnum> regularEnumClass = RegularEnum.class;
         Class<ChronoUnit> chronoUnitClass = ChronoUnit.class;
         if (BuildConfig.EXCLUDE_ENUMS_WORK_AROUND) {
-            KeepChronoUnit.referenceBrokenExcludes();
+            KeepChronoUnit.referenceConstants();
         }
         try {
             Field constant = regularEnumClass.getField("CONSTANT");

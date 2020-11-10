@@ -6,7 +6,7 @@ import java.time.temporal.ChronoUnit;
  * @author Matthias Schmitt
  */
 public class KeepChronoUnit {
-    public static void referenceBrokenExcludes() {
+    public static void referenceConstants() {
         ChronoUnit.NANOS.ordinal();
         ChronoUnit.MICROS.ordinal();
         ChronoUnit.MILLIS.ordinal();
